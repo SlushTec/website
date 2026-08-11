@@ -4,8 +4,8 @@ Official studio site for **[slushtec.com](https://slushtec.com)**.
 
 ## Stack
 
-- [Astro](https://astro.build) + TypeScript
-- Tailwind CSS with SlushTec brand tokens
+- [Astro 7](https://astro.build) + TypeScript
+- Tailwind CSS 4 (via `@tailwindcss/vite`)
 - SEO-ready layouts and meta components
 
 ## Quick start
@@ -31,11 +31,13 @@ src/
   components/   # SEO, Header, Footer
   layouts/      # BaseLayout
   pages/        # index, about, projects, contact
-  styles/       # global CSS + brand variables
+  styles/       # global CSS + brand tokens (@theme)
 public/         # robots.txt, favicon, future OG images
 ```
 
-## Brand tokens (CSS)
+## Brand tokens
+
+Defined in `src/styles/global.css` via `@theme`:
 
 | Token | Hex | Role |
 |-------|-----|------|

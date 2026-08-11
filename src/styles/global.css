@@ -1,14 +1,15 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
-:root {
+@theme {
   --color-iron: #0f0e0d;
   --color-warm-earth: #de865b;
   --color-golden-glow: #e8bd79;
   --color-burnt-adobe: #904d2b;
   --color-sage: #659176;
   --color-surface: #1c1814;
+
+  --font-sans: Inter, system-ui, sans-serif;
+  --font-display: Inter, system-ui, sans-serif;
 }
 
 html {
@@ -16,11 +17,13 @@ html {
 }
 
 body {
-  @apply bg-iron text-gray-100 antialiased;
-  font-family: Inter, system-ui, sans-serif;
+  background-color: var(--color-iron);
+  color: #f3f4f6;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
 }
 
-/* Focus styles for accessibility */
 :focus-visible {
-  @apply outline-2 outline-offset-2 outline-warm-earth;
+  outline: 2px solid var(--color-warm-earth);
+  outline-offset: 2px;
 }
