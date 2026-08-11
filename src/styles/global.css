@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-iron: #0f0e0d;
+  --color-warm-earth: #de865b;
+  --color-golden-glow: #e8bd79;
+  --color-burnt-adobe: #904d2b;
+  --color-sage: #659176;
+  --color-surface: #1c1814;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-iron text-gray-100 antialiased;
+  font-family: Inter, system-ui, sans-serif;
+}
+
+/* Focus styles for accessibility */
+:focus-visible {
+  @apply outline-2 outline-offset-2 outline-warm-earth;
+}

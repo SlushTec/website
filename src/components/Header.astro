@@ -1,0 +1,26 @@
+---
+const nav = [
+  { href: '/', label: 'Home' },
+  { href: '/about', label: 'Studio' },
+  { href: '/projects', label: 'Projects' },
+  { href: '/contact', label: 'Contact' },
+];
+---
+
+<header class="border-b border-surface/80 bg-iron/95 backdrop-blur sticky top-0 z-50">
+  <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+    <a href="/" class="font-display font-semibold tracking-tight text-golden-glow hover:text-warm-earth transition">
+      SlushTec
+    </a>
+    <nav class="flex gap-6 text-sm">
+      {nav.map((item) => (
+        <a
+          href={item.href}
+          class="text-gray-300 hover:text-warm-earth transition"
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,71 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="SlushTec — You act. The world keeps score."
+  description="Indie game studio building adult interactive worlds with permanent consequences. Home of VARP (Virtual Action Role Play) and Ashcourt — Hell Rises."
+>
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20">
+    <p class="text-warm-earth text-sm font-medium tracking-wide uppercase mb-4">
+      Indie Game Studio · Tucson / Casas Adobes
+    </p>
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white leading-tight">
+      You act.<br />
+      <span class="text-golden-glow">The world keeps score.</span>
+    </h1>
+    <p class="mt-6 text-lg text-gray-300 max-w-2xl leading-relaxed">
+      SlushTec builds adult interactive worlds with permanent residual.
+      Free-form action. Bidirectional relationships that can rise or collapse.
+      A living street that remembers what you did.
+    </p>
+    <div class="mt-10 flex flex-wrap gap-4">
+      <a
+        href="/projects"
+        class="inline-flex items-center px-5 py-2.5 rounded bg-warm-earth text-iron font-medium hover:bg-golden-glow transition"
+      >
+        View Projects
+      </a>
+      <a
+        href="/about"
+        class="inline-flex items-center px-5 py-2.5 rounded border border-surface text-gray-200 hover:border-warm-earth hover:text-warm-earth transition"
+      >
+        About the Studio
+      </a>
+    </div>
+  </section>
+
+  <section class="border-t border-surface bg-surface/40">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+      <h2 class="text-2xl font-semibold text-golden-glow mb-8">What we build</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <a href="/projects#varp" class="block p-6 rounded-lg border border-surface hover:border-warm-earth/60 transition group">
+          <h3 class="text-xl font-medium text-white group-hover:text-warm-earth transition">VARP</h3>
+          <p class="mt-2 text-gray-400 text-sm leading-relaxed">
+            Virtual Action Role Play — a Virtual LARP engine with permanent memory,
+            modular original World Packs, and bidirectional relationships that keep score.
+          </p>
+        </a>
+        <a href="/projects#ashcourt" class="block p-6 rounded-lg border border-surface hover:border-warm-earth/60 transition group">
+          <h3 class="text-xl font-medium text-white group-hover:text-warm-earth transition">Ashcourt</h3>
+          <p class="mt-2 text-gray-400 text-sm leading-relaxed">
+            Hell Rises — original-IP dark fantasy narrative aRPG.
+            Also the flagship World Pack for VARP.
+          </p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
+    <h2 class="text-2xl font-semibold text-golden-glow mb-6">Design pillars</h2>
+    <ul class="grid sm:grid-cols-2 gap-4 text-gray-300">
+      <li class="flex gap-3"><span class="text-warm-earth">01</span> Permanent score — fail forward, no paid undo</li>
+      <li class="flex gap-3"><span class="text-warm-earth">02</span> Bidirectional relationships that can collapse</li>
+      <li class="flex gap-3"><span class="text-warm-earth">03</span> World-pack authenticity over generic helpfulness</li>
+      <li class="flex gap-3"><span class="text-warm-earth">04</span> Local-first residual ownership</li>
+      <li class="flex gap-3"><span class="text-warm-earth">05</span> Worlds, not agendas</li>
+      <li class="flex gap-3"><span class="text-warm-earth">06</span> Minors: hard no</li>
+    </ul>
+  </section>
+</BaseLayout>
