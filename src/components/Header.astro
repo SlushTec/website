@@ -8,14 +8,18 @@ const nav = [
 ---
 
 <header class="border-b border-surface/70 bg-iron/95 backdrop-blur-md sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 h-16 sm:h-[4.75rem] flex items-center justify-between">
-    <a href="/" class="flex items-center group" aria-label="SlushTec home">
+  <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 h-16 sm:h-[4.5rem] flex items-center justify-between">
+    <a href="/" class="flex items-center gap-3 group" aria-label="SlushTec home">
       <img
-        src="/brand/lockup-primary.jpg"
-        alt="SlushTec"
-        class="h-9 sm:h-11 w-auto object-contain transition duration-200 group-hover:opacity-90"
+        src="/brand/mark-circular-approved.jpg"
+        alt=""
+        class="w-10 h-10 sm:w-11 sm:h-11 rounded-full object-cover transition duration-200 group-hover:scale-[1.04]"
+        width="44"
         height="44"
       />
+      <span class="font-semibold tracking-[0.12em] text-lg sm:text-[1.35rem] leading-none uppercase">
+        <span class="text-gray-200 group-hover:text-white transition">Slush</span><span class="text-golden-glow group-hover:text-warm-earth transition">Tec</span>
+      </span>
     </a>
     <nav class="flex items-center gap-6 sm:gap-8 text-sm tracking-wide">
       {nav.map((item) => (
