@@ -1,17 +1,20 @@
 # SlushTec Brand Assets
 
-All visual brand items used by the site live here.
-
-## Files
+## Live on site
 
 | File | Use |
 |------|-----|
 | `mark-circular.svg` | Primary circular geometric S monogram (Header, Footer, residual treatments) |
 | `favicon.svg` | Browser favicon |
 
-## Guidelines
+## High-fidelity masters (local / brand pack)
 
-Full brand guidelines live in `docs/brand/BRAND.md`.
+Use the JPG masters from the brand pack for marketing, merch previews, and high-res needs:
+
+- `lockup-primary.jpg` — seal + wordmark
+- `wordmark-primary.jpg` — metallic wordmark
+- `mark-circular-s.jpg` / `mark-circular-approved.jpg` — full metallic seal
+- `mark-mono-white.jpg` / `wordmark-mono-black.jpg` — laser / mono
 
 ## Color Tokens
 
@@ -22,6 +25,6 @@ Full brand guidelines live in `docs/brand/BRAND.md`.
 
 ## Rules
 
-- Prefer the SVG versions for the site.
-- High-contrast mono versions for laser/merch.
+- Prefer the SVG for site chrome (crisp at any size).
+- High-contrast mono for laser / merch.
 - Never stretch or apply soft effects.

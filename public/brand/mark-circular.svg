@@ -1,20 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="SlushTec mark">
   <!-- Outer Golden Glow ring -->
-  <circle cx="50" cy="50" r="46" stroke="#e8bd79" stroke-width="5" fill="#0f0e0d"/>
-  <!-- Inner subtle ring -->
-  <circle cx="50" cy="50" r="40" stroke="#1c1814" stroke-width="1.5" fill="none"/>
-  <!-- Geometric angular S - bold industrial form -->
-  <path d="M30 28 
-           L70 28 
-           L70 40 
-           L48 40 
-           L48 46 
-           L70 46 
-           L70 72 
-           L30 72 
-           L30 60 
-           L52 60 
-           L52 54 
-           L30 54 Z" 
-        fill="#e8bd79"/>
+  <circle cx="50" cy="50" r="47" stroke="#e8bd79" stroke-width="4.5" fill="#0f0e0d"/>
+  <!-- Inner ring -->
+  <circle cx="50" cy="50" r="41" stroke="#e8bd79" stroke-width="1.2" opacity="0.45" fill="none"/>
+  <!-- Angular geometric S - bold industrial cuts matching approved seal -->
+  <path d="M32 30
+           H68
+           V42
+           H48
+           V48
+           H66
+           V70
+           H32
+           V58
+           H52
+           V52
+           H32
+           Z" fill="#e8bd79"/>
 </svg>
