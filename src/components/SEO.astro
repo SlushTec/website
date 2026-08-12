@@ -9,8 +9,8 @@ interface Props {
 
 const {
   title = 'SlushTec — You act. The world keeps score.',
-  description = 'SlushTec is an indie game studio building adult interactive worlds with permanent consequences. Home of VARP (Virtual Action Role Play) and Ashcourt.',
-  image = '/og-default.png',
+  description = 'Indie game studio in Tucson building adult interactive worlds with permanent residual. Home of VARP (Virtual Action Role Play) and Ashcourt — Hell Rises. Free-form action, bidirectional relationships, fail-forward.',
+  image = '/images/hero-residual.jpg',
   canonical,
   type = 'website',
 } = Astro.props;
@@ -18,28 +18,29 @@ const {
 const site = 'https://slushtec.com';
 const fullTitle = title.includes('SlushTec') ? title : `${title} | SlushTec`;
 const canonicalURL = canonical ? new URL(canonical, site) : new URL(Astro.url.pathname, site);
+const imageURL = new URL(image, site);
 ---
 
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>{fullTitle}</title>
 <meta name="description" content={description} />
+<meta name="robots" content="index, follow" />
 <link rel="canonical" href={canonicalURL} />
 
-{/* Open Graph */}
 <meta property="og:type" content={type} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:title" content={fullTitle} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={new URL(image, site)} />
+<meta property="og:image" content={imageURL} />
 <meta property="og:site_name" content="SlushTec" />
+<meta property="og:locale" content="en_US" />
 
-{/* Twitter */}
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={fullTitle} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={new URL(image, site)} />
+<meta name="twitter:image" content={imageURL} />
 
-{/* Favicon placeholders */}
 <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 <meta name="theme-color" content="#0f0e0d" />
+<meta name="author" content="SlushTec" />

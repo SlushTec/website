@@ -7,6 +7,7 @@
   --color-burnt-adobe: #904d2b;
   --color-sage: #659176;
   --color-surface: #1c1814;
+  --color-off-white: #f5f2eb;
 
   --font-sans: Inter, system-ui, sans-serif;
   --font-display: Inter, system-ui, sans-serif;
@@ -18,9 +19,10 @@ html {
 
 body {
   background-color: var(--color-iron);
-  color: #f3f4f6;
+  color: #e5e7eb;
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 :focus-visible {
@@ -28,23 +30,57 @@ body {
   outline-offset: 2px;
 }
 
-/* Residual score line */
+/* Residual score line — permanent mark */
 .score-line {
   height: 2px;
-  background: linear-gradient(90deg, transparent 0%, var(--color-golden-glow) 20%, var(--color-golden-glow) 80%, transparent 100%);
-  opacity: 0.7;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-golden-glow) 12%,
+    var(--color-golden-glow) 88%,
+    transparent 100%
+  );
+  opacity: 0.75;
+}
+
+.score-line-strong {
+  height: 3px;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    var(--color-golden-glow) 8%,
+    var(--color-warm-earth) 50%,
+    var(--color-golden-glow) 92%,
+    transparent 100%
+  );
+  opacity: 0.9;
 }
 
 /* Geometric badge energy */
 .badge-border {
   border: 1px solid var(--color-surface);
-  transition: border-color 0.2s ease;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 .badge-border:hover {
-  border-color: color-mix(in srgb, var(--color-warm-earth) 60%, transparent);
+  border-color: color-mix(in srgb, var(--color-warm-earth) 55%, transparent);
+  box-shadow: 0 0 0 1px color-mix(in srgb, var(--color-warm-earth) 20%, transparent);
 }
 
-/* Stronger interactive residual */
+/* Interactive residual */
 a, button {
-  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease;
+  transition: color 0.15s ease, border-color 0.15s ease, background-color 0.15s ease, transform 0.15s ease, opacity 0.15s ease;
+}
+
+/* Subtle residual pulse for active badges */
+@keyframes residual-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.85; }
+}
+.residual-active {
+  animation: residual-pulse 3.5s ease-in-out infinite;
+}
+
+/* Card image treatment */
+.project-visual {
+  background: linear-gradient(160deg, #1a1612 0%, #0f0e0d 100%);
 }
