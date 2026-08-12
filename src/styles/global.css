@@ -38,12 +38,12 @@ body {
   outline-offset: 2px;
 }
 
-/* Brand wordmark — industrial geometric */
+/* Brand wordmark — industrial geometric, all-caps by design */
 .wordmark {
   font-family: var(--font-display);
   font-weight: 600;
-  letter-spacing: 0.06em;
-  text-transform: none;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 /* Residual score line — permanent mark */
