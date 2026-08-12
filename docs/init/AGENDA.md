@@ -1,6 +1,6 @@
 # Init — Agenda (Website)
 
-**Date:** 2026-08-12
+**From handshake 2026-08-12**
 
 1. **BLOCKED** — approve hero + VARP + Ashcourt concept art  
 2. Drop approved files into `public/images/`  

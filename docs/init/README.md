@@ -1,13 +1,15 @@
-# docs/init — single reinit bundle (website)
+# docs/init — single reinit bundle (Website)
 
 **Canonical path for `init website`.** Fixed filenames only.
 
 | File | Role |
 |------|------|
-| `TEAM.md` | Core seats + git law |
-| `HANDSHAKE.md` | Studio site status |
-| `CHECKPOINT.md` | Session law if any |
-| `PROFILE.md` | Owner profile (studio context) |
-| `AGENDA.md` | Today's queue |
+| TEAM.md | Core seats + git law |
+| HANDSHAKE.md | Studio site handshake (not VARP) |
+| CHECKPOINT.md | Session law |
+| PROFILE.md | Owner summary |
+| AGENDA.md | Today’s queue |
 
-Archives may live under `docs/daily_hs/`. Boot uses **only** `docs/init/`.
+Archive: `docs/daily_hs/`  
+Owner full profile: SlushTec/varp `docs/OWNERS_PERSONALITY.md`  
+Team law: SlushTec/varp `docs/SLUSHTEC-DEV-TEAM.md`

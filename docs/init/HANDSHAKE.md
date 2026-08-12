@@ -1,20 +1,21 @@
-# Init — Handshake (Website)
+# Init — Handshake (SlushTec Website)
 
-**Date:** 2026-08-12  
+**Source:** `docs/daily_hs/2026-08-12-SLUSHTEC.md`  
 **Repo:** SlushTec/website  
-**Scope:** Studio identity site only — not VARP engine, not Sonoran Slush commerce.
+**Domain:** slushtec.com  
+**Scope:** Studio identity site only — not VARP engine, not Sonoran Slush commerce, not Ashcourt UE.
 
 ## Locked
 
-- Brand: seal + wordmark JPGs · Iron Black / Golden Glow · *You act. The world keeps score.*  
+- Brand: approved seal + wordmark JPGs · Iron Black / Golden Glow · *You act. The world keeps score.*  
+- All-caps SLUSHTEC intentional  
 - Stack: Astro 7 + Tailwind 4  
-- Projects labeled In Development  
-- All-caps SLUSHTEC wordmark intentional
+- Pages: Home, Studio, Projects, Contact · Projects labeled In Development
 
 ## Blocked
 
 Hero + VARP + Ashcourt images not approved. No further visual work until assets land.
 
-## Pending (after image approval)
+## Pending after image approval
 
-Sticky **full-screen** translucent hero background; contrast held on scroll.
+Sticky **full-screen** translucent hero; contrast held on scroll.
