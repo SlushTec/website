@@ -6,50 +6,52 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="SlushTec — You act. The world keeps score."
   description="Indie game studio building adult interactive worlds with permanent consequences. Home of VARP (Virtual Action Role Play) and Ashcourt — Hell Rises."
 >
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-16 pb-20">
-    <p class="text-warm-earth text-sm font-medium tracking-widest uppercase mb-5">
+  <!-- Hero — tighter -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 pt-10 pb-12 sm:pt-12 sm:pb-14">
+    <p class="text-warm-earth text-sm font-medium tracking-widest uppercase mb-3">
       Indie Game Studio · Tucson, Arizona
     </p>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white leading-tight">
+    <h1 class="text-4xl sm:text-5xl md:text-[3.25rem] font-semibold tracking-tight text-white leading-[1.15]">
       You act.<br />
       <span class="text-golden-glow">The world keeps score.</span>
     </h1>
-    <div class="score-line mt-6 mb-8 max-w-md"></div>
-    <p class="text-lg text-gray-300 max-w-2xl leading-relaxed">
+    <div class="score-line mt-5 mb-6 max-w-sm"></div>
+    <p class="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed">
       SlushTec builds adult interactive worlds with permanent residual.
       Free-form action. Bidirectional relationships that can rise or collapse.
       A living street that remembers what you did.
     </p>
-    <div class="mt-10 flex flex-wrap gap-4">
+    <div class="mt-7 flex flex-wrap gap-3">
       <a
         href="/projects"
-        class="inline-flex items-center px-6 py-2.5 rounded bg-warm-earth text-iron font-medium hover:bg-golden-glow transition"
+        class="inline-flex items-center px-5 py-2.5 rounded bg-warm-earth text-iron font-medium hover:bg-golden-glow transition"
       >
         View Projects
       </a>
       <a
         href="/about"
-        class="inline-flex items-center px-6 py-2.5 rounded border border-surface text-gray-200 hover:border-warm-earth hover:text-warm-earth transition"
+        class="inline-flex items-center px-5 py-2.5 rounded border border-surface text-gray-200 hover:border-warm-earth hover:text-warm-earth transition"
       >
         About the Studio
       </a>
     </div>
   </section>
 
+  <!-- What we build -->
   <section class="border-t border-surface bg-surface/40">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-      <h2 class="text-2xl font-semibold text-golden-glow mb-8 tracking-tight">What we build</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <a href="/projects#varp" class="block p-6 rounded-lg badge-border group">
-          <h3 class="text-xl font-medium text-white group-hover:text-warm-earth transition">VARP</h3>
-          <p class="mt-2 text-gray-400 text-sm leading-relaxed">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+      <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-6 tracking-tight">What we build</h2>
+      <div class="grid md:grid-cols-2 gap-5">
+        <a href="/projects#varp" class="block p-5 rounded-lg badge-border group">
+          <h3 class="text-lg font-medium text-white group-hover:text-warm-earth transition">VARP</h3>
+          <p class="mt-1.5 text-gray-400 text-sm leading-relaxed">
             Virtual Action Role Play — a Virtual LARP engine with permanent memory,
             modular original World Packs, and bidirectional relationships that keep score.
           </p>
         </a>
-        <a href="/projects#ashcourt" class="block p-6 rounded-lg badge-border group">
-          <h3 class="text-xl font-medium text-white group-hover:text-warm-earth transition">Ashcourt</h3>
-          <p class="mt-2 text-gray-400 text-sm leading-relaxed">
+        <a href="/projects#ashcourt" class="block p-5 rounded-lg badge-border group">
+          <h3 class="text-lg font-medium text-white group-hover:text-warm-earth transition">Ashcourt</h3>
+          <p class="mt-1.5 text-gray-400 text-sm leading-relaxed">
             Hell Rises — original-IP dark fantasy narrative aRPG.
             Also the flagship World Pack for VARP.
           </p>
@@ -58,15 +60,16 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-    <h2 class="text-2xl font-semibold text-golden-glow mb-6 tracking-tight">Design pillars</h2>
-    <ul class="grid sm:grid-cols-2 gap-4 text-gray-300">
-      <li class="flex gap-3"><span class="text-warm-earth font-medium">01</span> Permanent score — fail forward, no paid undo</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium">02</span> Bidirectional relationships that can collapse</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium">03</span> World-pack authenticity over generic helpfulness</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium">04</span> Local-first residual ownership</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium">05</span> Worlds, not agendas</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium">06</span> Minors: hard no</li>
+  <!-- Design pillars -->
+  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-10 sm:py-12">
+    <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-5 tracking-tight">Design pillars</h2>
+    <ul class="grid sm:grid-cols-2 gap-x-8 gap-y-3 text-gray-300 text-sm sm:text-base">
+      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">01</span> Permanent score — fail forward, no paid undo</li>
+      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">02</span> Bidirectional relationships that can collapse</li>
+      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">03</span> World-pack authenticity over generic helpfulness</li>
+      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">04</span> Local-first residual ownership</li>
+      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">05</span> Worlds, not agendas</li>
+      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">06</span> Minors: hard no</li>
     </ul>
   </section>
 </BaseLayout>
