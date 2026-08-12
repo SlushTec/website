@@ -7,15 +7,15 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   description="Indie game studio building adult interactive worlds with permanent consequences. Home of VARP (Virtual Action Role Play) and Ashcourt — Hell Rises."
 >
   <!-- Hero -->
-  <section class="max-w-6xl mx-auto px-5 sm:px-8 pt-10 pb-8 sm:pt-12 sm:pb-10">
+  <section class="max-w-7xl mx-auto px-6 sm:px-10 pt-10 pb-8 sm:pt-12 sm:pb-10">
     <p class="text-warm-earth text-sm font-medium tracking-widest uppercase mb-3">
       Indie Game Studio · Tucson, Arizona
     </p>
-    <h1 class="text-4xl sm:text-5xl md:text-[3.4rem] font-semibold tracking-tight text-white leading-[1.15]">
+    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.12]">
       You act.<br />
       <span class="text-golden-glow">The world keeps score.</span>
     </h1>
-    <div class="score-line mt-5 mb-6 max-w-sm"></div>
+    <div class="score-line mt-5 mb-6 max-w-md"></div>
     <p class="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed">
       SlushTec builds adult interactive worlds with permanent residual.
       Free-form action. Bidirectional relationships that can rise or collapse.
@@ -37,25 +37,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </div>
   </section>
 
-  <!-- Residual hero mark (pure vector, no external image needed) -->
-  <section class="max-w-6xl mx-auto px-5 sm:px-8 pb-12">
-    <div class="relative aspect-[2.4/1] rounded-lg overflow-hidden border border-surface bg-iron flex items-center justify-center">
-      <div class="absolute inset-0 opacity-20" style="background: radial-gradient(ellipse at center, #e8bd7922 0%, transparent 70%);"></div>
-      <img src="/mark-circular.svg" alt="SlushTec residual mark" class="w-32 h-32 sm:w-40 sm:h-40 relative z-10" width="160" height="160" />
-      <div class="absolute bottom-4 left-0 right-0 text-center">
-        <p class="text-xs tracking-widest text-golden-glow/70 uppercase">Permanent residual</p>
-      </div>
+  <!-- Hero residual image (from the drop-in package) -->
+  <section class="max-w-7xl mx-auto px-6 sm:px-10 pb-12">
+    <div class="relative aspect-[2.2/1] rounded-lg overflow-hidden border border-surface bg-iron">
+      <img
+        src="/images/hero-residual.jpg"
+        alt="SlushTec residual mark — permanent score"
+        class="w-full h-full object-cover"
+        width="1400"
+        height="640"
+      />
     </div>
   </section>
 
   <!-- What we build -->
   <section class="border-t border-surface bg-surface/40">
-    <div class="max-w-6xl mx-auto px-5 sm:px-8 py-10 sm:py-12">
+    <div class="max-w-7xl mx-auto px-6 sm:px-10 py-10 sm:py-12">
       <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-6 tracking-tight">What we build</h2>
-      <div class="grid md:grid-cols-2 gap-5">
+      <div class="grid md:grid-cols-2 gap-6">
         <a href="/projects#varp" class="block rounded-lg badge-border group overflow-hidden">
-          <div class="aspect-video bg-iron flex items-center justify-center border-b border-surface">
-            <img src="/mark-circular.svg" alt="" class="w-16 h-16 opacity-80 group-hover:opacity-100 transition" width="64" height="64" />
+          <div class="aspect-video bg-iron overflow-hidden">
+            <img
+              src="/images/varp-card.jpg"
+              alt="VARP — living residual ledger"
+              class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+              width="800"
+              height="450"
+            />
           </div>
           <div class="p-5">
             <div class="flex items-center gap-2 mb-1">
@@ -68,8 +76,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
           </div>
         </a>
         <a href="/projects#ashcourt" class="block rounded-lg badge-border group overflow-hidden">
-          <div class="aspect-video bg-iron flex items-center justify-center border-b border-surface">
-            <img src="/mark-circular.svg" alt="" class="w-16 h-16 opacity-80 group-hover:opacity-100 transition" width="64" height="64" />
+          <div class="aspect-video bg-iron overflow-hidden">
+            <img
+              src="/images/ashcourt-card.jpg"
+              alt="Ashcourt — Hell Rises"
+              class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
+              width="800"
+              height="450"
+            />
           </div>
           <div class="p-5">
             <div class="flex items-center gap-2 mb-1">
@@ -86,9 +100,9 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   </section>
 
   <!-- Design pillars -->
-  <section class="max-w-6xl mx-auto px-5 sm:px-8 py-10 sm:py-12">
+  <section class="max-w-7xl mx-auto px-6 sm:px-10 py-10 sm:py-12">
     <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-5 tracking-tight">Design pillars</h2>
-    <ul class="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-gray-300 text-sm sm:text-base">
+    <ul class="grid sm:grid-cols-2 gap-x-12 gap-y-3 text-gray-300 text-sm sm:text-base">
       <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">01</span> Permanent score — fail forward, no paid undo</li>
       <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">02</span> Bidirectional relationships that can collapse</li>
       <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">03</span> World-pack authenticity over generic helpfulness</li>
