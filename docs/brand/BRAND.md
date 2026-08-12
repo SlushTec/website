@@ -21,7 +21,7 @@ You act. The world keeps score.
 - Dark iron field + Golden Glow ring
 - Bold angular construction for silhouette and badge energy
 - Laser-first design (high contrast, consistent weight)
-- Live at `/mark-circular.svg` and used in Header + favicon
+- **Live at** `/brand/mark-circular.svg`
 
 ### Lockups
 - Horizontal: mark + wordmark (current Header)
@@ -59,11 +59,21 @@ You act. The world keeps score.
 - Never stretch, rotate off-axis, or apply soft/blur effects
 - Badge energy first — marks should feel residual and earned
 
-## Assets Location
-- `public/mark-circular.svg` — primary geometric S
-- `public/favicon.svg` — simplified circular S
-- Header: live circular mark + color-split SLUSHTEC
-- This document: `docs/brand/BRAND.md`
+## Assets Location (site)
+```
+public/
+  brand/
+    mark-circular.svg     ← primary geometric S monogram
+    favicon.svg           ← browser favicon
+    README.md             ← this folder’s index
+  images/
+    hero-residual.jpg     ← (user-supplied)
+    varp-card.jpg
+    ashcourt-card.jpg
+docs/
+  brand/
+    BRAND.md              ← full guidelines
+```
 
 ---
 *SlushTec — permanent score, structured conflict, lock after the call.*
