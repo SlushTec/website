@@ -4,32 +4,64 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Projects — SlushTec"
-  description="VARP and Ashcourt: the core projects of SlushTec. Permanent residual systems and original-IP dark fantasy."
+  description="VARP and Ashcourt: active development at SlushTec. Permanent residual systems, True Emotion Engine, and original-IP dark fantasy."
 >
-  <section class="max-w-5xl mx-auto px-4 sm:px-6 py-16">
-    <h1 class="text-3xl sm:text-4xl font-semibold text-golden-glow mb-12">Projects</h1>
+  <section class="max-w-6xl mx-auto px-4 sm:px-6 py-12">
+    <p class="text-warm-earth text-sm font-medium tracking-widest uppercase mb-3">Active Development</p>
+    <h1 class="text-3xl sm:text-4xl font-semibold text-golden-glow mb-4">Projects</h1>
+    <p class="text-gray-400 max-w-2xl mb-12 leading-relaxed">
+      Systems that keep score. Original IP only. Local-first where it matters. No soft resets.
+    </p>
 
-    <article id="varp" class="mb-16 scroll-mt-24">
-      <h2 class="text-2xl font-medium text-white mb-3">VARP</h2>
-      <p class="text-warm-earth text-sm mb-4">Virtual Action Role Play · Active development</p>
-      <p class="text-gray-300 leading-relaxed max-w-3xl">
-        A modular, local-first Virtual LARP engine. Players act freely inside reactive mini-universes
-        whose inhabitants keep permanent score. Features the True Emotion Engine, soul-bound residual systems,
-        and original World Packs. Adult (18+).
-      </p>
-      <p class="mt-4 text-sm text-gray-500">
-        <!-- TODO: public repo or Steam page when ready -->
-        Development is private. Public surfaces will open when the vertical slice is ready to share.
-      </p>
+    <article id="varp" class="mb-16 scroll-mt-24 grid md:grid-cols-[1fr_1.2fr] gap-8 items-start">
+      <div class="aspect-video bg-surface rounded-lg border border-surface flex items-center justify-center">
+        <span class="text-gray-600 text-sm">VARP visual — pending</span>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-medium text-white">VARP</h2>
+          <span class="text-xs px-2 py-0.5 rounded bg-warm-earth/20 text-warm-earth border border-warm-earth/40">Active</span>
+        </div>
+        <p class="text-golden-glow text-sm mb-4">Virtual Action Role Play · Playable vertical slice (CP-3.1)</p>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          A modular, local-first Virtual LARP engine. You act freely inside reactive mini-universes whose inhabitants keep permanent score. 
+          Features the True Emotion Engine (bias + residue, not transcripts), soul-bound residual systems, bidirectional relationships that can rise or collapse, and original World Packs.
+        </p>
+        <ul class="text-sm text-gray-400 space-y-1 mb-4">
+          <li>• Permanent consequence ledger + Echo system</li>
+          <li>• Living Relationship Radar (multi-vector, asymmetric decay)</li>
+          <li>• True-Name / Soul-Contract rituals</li>
+          <li>• World Clock + absence residual</li>
+          <li>• Annex ⇄ Street loop currently playable</li>
+        </ul>
+        <p class="text-xs text-gray-500">Adult 18+. Original IP only. Local-first (Ollama / ComfyUI optional cloud).</p>
+      </div>
     </article>
 
-    <article id="ashcourt" class="mb-16 scroll-mt-24">
-      <h2 class="text-2xl font-medium text-white mb-3">Ashcourt — Hell Rises</h2>
-      <p class="text-warm-earth text-sm mb-4">Original-IP dark fantasy · Parallel track</p>
-      <p class="text-gray-300 leading-relaxed max-w-3xl">
-        Narrative action RPG set in the same universe as the flagship VARP World Pack.
-        Modern hell, permanent residual, and the Threshold Annex. Commercial original IP only.
-      </p>
+    <article id="ashcourt" class="mb-16 scroll-mt-24 grid md:grid-cols-[1fr_1.2fr] gap-8 items-start">
+      <div class="aspect-video bg-surface rounded-lg border border-surface flex items-center justify-center">
+        <span class="text-gray-600 text-sm">Ashcourt visual — pending</span>
+      </div>
+      <div>
+        <div class="flex items-center gap-3 mb-2">
+          <h2 class="text-2xl font-medium text-white">Ashcourt — Hell Rises</h2>
+          <span class="text-xs px-2 py-0.5 rounded bg-surface text-gray-300 border border-surface">Parallel</span>
+        </div>
+        <p class="text-golden-glow text-sm mb-4">Original-IP dark fantasy aRPG · Flagship World Pack</p>
+        <p class="text-gray-300 leading-relaxed mb-4">
+          You claw up from nothing in a living hell of rings, contracts, and reputation. 
+          Intent-based combat, lasting wounds, true-name contracts, and living infrastructure. 
+          The proving ground for True Emotion Engine V2 and the first commercial World Pack for VARP.
+        </p>
+        <ul class="text-sm text-gray-400 space-y-1 mb-4">
+          <li>• Intent combat — declare approach; scars persist</li>
+          <li>• Reputation & true-name contracts (word is ledgered)</li>
+          <li>• Living infrastructure (resort, rings, diplomacy)</li>
+          <li>• Hybrid dialogue (scripted critical + live LLM core cast)</li>
+          <li>• Soft death transforms rather than reloads</li>
+        </ul>
+        <p class="text-xs text-gray-500">Godot 4.7 vertical slice in progress. Original IP only.</p>
+      </div>
     </article>
   </section>
 </BaseLayout>
