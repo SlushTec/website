@@ -4,111 +4,157 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="SlushTec — You act. The world keeps score."
-  description="Indie game studio building adult interactive worlds with permanent consequences. Home of VARP (Virtual Action Role Play) and Ashcourt — Hell Rises."
+  description="Indie game studio in Tucson building adult interactive worlds with permanent residual. VARP engine + Ashcourt. Free-form action, bidirectional relationships that can collapse, fail-forward."
+  image="/images/hero-residual.jpg"
 >
-  <!-- Hero -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-10 pt-10 pb-8 sm:pt-12 sm:pb-10">
-    <p class="text-warm-earth text-sm font-medium tracking-widest uppercase mb-3">
-      Indie Game Studio · Tucson, Arizona
-    </p>
-    <h1 class="text-4xl sm:text-5xl md:text-6xl font-semibold tracking-tight text-white leading-[1.12]">
-      You act.<br />
-      <span class="text-golden-glow">The world keeps score.</span>
-    </h1>
-    <div class="score-line mt-5 mb-6 max-w-md"></div>
-    <p class="text-base sm:text-lg text-gray-300 max-w-2xl leading-relaxed">
-      SlushTec builds adult interactive worlds with permanent residual.
-      Free-form action. Bidirectional relationships that can rise or collapse.
-      A living street that remembers what you did.
-    </p>
-    <div class="mt-7 flex flex-wrap gap-3">
-      <a
-        href="/projects"
-        class="inline-flex items-center px-5 py-2.5 rounded bg-warm-earth text-iron font-medium hover:bg-golden-glow transition"
-      >
-        View Projects
-      </a>
-      <a
-        href="/about"
-        class="inline-flex items-center px-5 py-2.5 rounded border border-surface text-gray-200 hover:border-warm-earth hover:text-warm-earth transition"
-      >
-        About the Studio
-      </a>
-    </div>
-  </section>
+  <!-- Hero: typographic residual focus -->
+  <section class="relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 pt-14 sm:pt-20 pb-12 sm:pb-16">
+      <div class="grid lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+        <div class="lg:col-span-7">
+          <p class="text-warm-earth text-xs sm:text-sm font-medium tracking-[0.2em] uppercase mb-4">
+            Indie Game Studio · Tucson, Arizona
+          </p>
+          <h1 class="text-4xl sm:text-5xl md:text-6xl lg:text-[3.5rem] font-semibold tracking-tight text-white leading-[1.08]">
+            You act.<br />
+            <span class="text-golden-glow">The world keeps score.</span>
+          </h1>
+          <div class="score-line-strong mt-6 mb-7 max-w-sm"></div>
+          <p class="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed">
+            SlushTec builds adult interactive worlds with permanent residual.
+            Free-form action. Bidirectional relationships that can rise or collapse.
+            A living street that remembers what you did.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href="/projects"
+              class="inline-flex items-center px-6 py-3 rounded bg-warm-earth text-iron font-semibold hover:bg-golden-glow transition"
+            >
+              View Projects
+            </a>
+            <a
+              href="/about"
+              class="inline-flex items-center px-6 py-3 rounded border border-surface text-gray-200 hover:border-warm-earth hover:text-warm-earth transition"
+            >
+              About the Studio
+            </a>
+          </div>
+        </div>
 
-  <!-- Hero residual image (from the drop-in package) -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-10 pb-12">
-    <div class="relative aspect-[2.2/1] rounded-lg overflow-hidden border border-surface bg-iron">
-      <img
-        src="/images/hero-residual.jpg"
-        alt="SlushTec residual mark — permanent score"
-        class="w-full h-full object-cover"
-        width="1400"
-        height="640"
-      />
-    </div>
-  </section>
-
-  <!-- What we build -->
-  <section class="border-t border-surface bg-surface/40">
-    <div class="max-w-7xl mx-auto px-6 sm:px-10 py-10 sm:py-12">
-      <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-6 tracking-tight">What we build</h2>
-      <div class="grid md:grid-cols-2 gap-6">
-        <a href="/projects#varp" class="block rounded-lg badge-border group overflow-hidden">
-          <div class="aspect-video bg-iron overflow-hidden">
+        <!-- Right column: seal as residual badge -->
+        <div class="lg:col-span-5 flex justify-center lg:justify-end">
+          <div class="relative w-56 h-56 sm:w-64 sm:h-64 lg:w-72 lg:h-72">
+            <div class="absolute inset-0 rounded-full bg-golden-glow/5 blur-2xl"></div>
             <img
-              src="/images/varp-card.jpg"
-              alt="VARP — living residual ledger"
-              class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
-              width="800"
-              height="450"
+              src="/brand/mark-circular.svg"
+              alt="SlushTec residual mark"
+              class="relative w-full h-full drop-shadow-[0_0_40px_rgba(232,189,121,0.15)]"
+              width="288"
+              height="288"
             />
           </div>
-          <div class="p-5">
-            <div class="flex items-center gap-2 mb-1">
-              <h3 class="text-lg font-medium text-white group-hover:text-warm-earth transition">VARP</h3>
-              <span class="text-xs px-2 py-0.5 rounded bg-warm-earth/20 text-warm-earth border border-warm-earth/40">Active</span>
-            </div>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              Virtual LARP engine. Permanent ledger, True Emotion Engine, modular original World Packs. Annex ⇄ Street playable (CP-3.1).
-            </p>
-          </div>
-        </a>
-        <a href="/projects#ashcourt" class="block rounded-lg badge-border group overflow-hidden">
-          <div class="aspect-video bg-iron overflow-hidden">
-            <img
-              src="/images/ashcourt-card.jpg"
-              alt="Ashcourt — Hell Rises"
-              class="w-full h-full object-cover group-hover:scale-[1.02] transition duration-300"
-              width="800"
-              height="450"
-            />
-          </div>
-          <div class="p-5">
-            <div class="flex items-center gap-2 mb-1">
-              <h3 class="text-lg font-medium text-white group-hover:text-warm-earth transition">Ashcourt</h3>
-              <span class="text-xs px-2 py-0.5 rounded bg-surface text-gray-300 border border-surface">Parallel</span>
-            </div>
-            <p class="text-gray-400 text-sm leading-relaxed">
-              Hell Rises — original-IP dark fantasy narrative aRPG. Flagship World Pack and proving ground for True Emotion Engine V2.
-            </p>
-          </div>
-        </a>
+        </div>
       </div>
     </div>
   </section>
 
+  <!-- Full-width residual visual strip -->
+  <section class="border-y border-surface bg-surface/30">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-8 sm:py-10">
+      <div class="relative aspect-[2.4/1] sm:aspect-[2.6/1] rounded-lg overflow-hidden border border-surface project-visual">
+        <img
+          src="/images/hero-residual.jpg"
+          alt="Permanent residual — the score remains"
+          class="w-full h-full object-cover object-center opacity-90"
+          width="1400"
+          height="580"
+          loading="eager"
+        />
+        <div class="absolute inset-0 bg-gradient-to-t from-iron/80 via-transparent to-transparent"></div>
+        <div class="absolute bottom-4 left-4 sm:bottom-6 sm:left-6">
+          <p class="text-xs tracking-[0.18em] uppercase text-golden-glow/90">Permanent residual</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects preview -->
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-14 sm:py-16">
+    <div class="flex items-end justify-between gap-4 mb-8">
+      <div>
+        <p class="text-warm-earth text-xs font-medium tracking-[0.18em] uppercase mb-2">In Development</p>
+        <h2 class="text-2xl sm:text-3xl font-semibold text-white tracking-tight">Projects</h2>
+      </div>
+      <a href="/projects" class="text-sm text-gray-400 hover:text-warm-earth transition hidden sm:inline">
+        All projects →
+      </a>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 lg:gap-8">
+      <!-- VARP -->
+      <a href="/projects#varp" class="group block rounded-xl badge-border overflow-hidden bg-surface/20">
+        <div class="aspect-[16/10] project-visual overflow-hidden">
+          <img
+            src="/images/varp-card.jpg"
+            alt="VARP — living residual street"
+            class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-500"
+            width="800"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-5 sm:p-6">
+          <div class="flex items-center gap-2.5 mb-2">
+            <h3 class="text-lg font-semibold text-white group-hover:text-warm-earth transition">VARP</h3>
+            <span class="text-[11px] px-2 py-0.5 rounded residual-active bg-warm-earth/15 text-warm-earth border border-warm-earth/35">
+              In Development
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Virtual Action Role Play engine. Permanent ledger, True Emotion Engine, soul-bound residual, modular World Packs. Annex ⇄ Street loop playable.
+          </p>
+        </div>
+      </a>
+
+      <!-- Ashcourt -->
+      <a href="/projects#ashcourt" class="group block rounded-xl badge-border overflow-hidden bg-surface/20">
+        <div class="aspect-[16/10] project-visual overflow-hidden">
+          <img
+            src="/images/ashcourt-card.jpg"
+            alt="Ashcourt — Hell Rises"
+            class="w-full h-full object-cover group-hover:scale-[1.03] transition duration-500"
+            width="800"
+            height="500"
+            loading="lazy"
+          />
+        </div>
+        <div class="p-5 sm:p-6">
+          <div class="flex items-center gap-2.5 mb-2">
+            <h3 class="text-lg font-semibold text-white group-hover:text-warm-earth transition">Ashcourt — Hell Rises</h3>
+            <span class="text-[11px] px-2 py-0.5 rounded bg-surface text-gray-400 border border-surface">
+              In Development
+            </span>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed">
+            Original-IP dark fantasy aRPG and flagship World Pack. Intent combat, lasting wounds, true-name contracts. Proving ground for True Emotion Engine V2.
+          </p>
+        </div>
+      </a>
+    </div>
+  </section>
+
   <!-- Design pillars -->
-  <section class="max-w-7xl mx-auto px-6 sm:px-10 py-10 sm:py-12">
-    <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-5 tracking-tight">Design pillars</h2>
-    <ul class="grid sm:grid-cols-2 gap-x-12 gap-y-3 text-gray-300 text-sm sm:text-base">
-      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">01</span> Permanent score — fail forward, no paid undo</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">02</span> Bidirectional relationships that can collapse</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">03</span> World-pack authenticity over generic helpfulness</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">04</span> Local-first residual ownership</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">05</span> Worlds, not agendas</li>
-      <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0">06</span> Minors: hard no</li>
-    </ul>
+  <section class="border-t border-surface bg-surface/25">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-14 sm:py-16">
+      <h2 class="text-xl sm:text-2xl font-semibold text-golden-glow mb-8 tracking-tight">Design pillars</h2>
+      <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-4 text-gray-300 text-sm sm:text-base">
+        <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0 tabular-nums">01</span> Permanent score — fail forward, no paid undo</li>
+        <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0 tabular-nums">02</span> Bidirectional relationships that can collapse</li>
+        <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0 tabular-nums">03</span> World-pack authenticity over generic helpfulness</li>
+        <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0 tabular-nums">04</span> Local-first residual ownership</li>
+        <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0 tabular-nums">05</span> Worlds, not agendas</li>
+        <li class="flex gap-3"><span class="text-warm-earth font-medium shrink-0 tabular-nums">06</span> Minors: hard no</li>
+      </ul>
+    </div>
   </section>
 </BaseLayout>
