@@ -4,22 +4,33 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
 <BaseLayout
   title="Contact — SlushTec"
-  description="Contact SpushTec. Studio inquiries, press, and partnership."
+  description="Contact SlushTec. Studio inquiries, press, and partnership. Tucson, Arizona."
 >
-  <section class="max-w-3xl mx-auto px-4 sm:px-6 py-16">
-    <h1 class="text-3xl sm:text-4xl font-semibold text-golden-glow mb-6">Contact</h1>
-    <p class="text-gray-300 mb-8 leading-relaxed">
-      For studio inquiries, press, or partnership:
+  <section class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-10 py-16 sm:py-20">
+    <p class="text-warm-earth text-xs sm:text-sm font-medium tracking-[0.2em] uppercase mb-3">
+      Get in touch
     </p>
-    <div class="space-y-4 text-lg">
-      <p>
-        <a href="mailto:brian@slushtec.com" class="text-warm-earth hover:text-golden-glow transition">
+    <h1 class="text-3xl sm:text-4xl font-semibold text-white tracking-tight mb-6">Contact</h1>
+    <div class="score-line max-w-xs mb-10"></div>
+
+    <div class="grid sm:grid-cols-2 gap-10 max-w-3xl">
+      <div>
+        <p class="text-gray-400 text-sm mb-2">Studio / press / partnership</p>
+        <a
+          href="mailto:brian@slushtec.com"
+          class="text-lg text-warm-earth hover:text-golden-glow transition font-medium"
+        >
           brian@slushtec.com
         </a>
-      </p>
-      <p class="text-sm text-gray-500">
-        Tucson, Arizona, US
-      </p>
+      </div>
+      <div>
+        <p class="text-gray-400 text-sm mb-2">Location</p>
+        <p class="text-gray-200">Tucson, Arizona, US</p>
+      </div>
     </div>
+
+    <p class="mt-12 text-sm text-gray-500 max-w-md">
+      Adult 18+ projects only. We do not accept unsolicited franchise or IP adaptation proposals.
+    </p>
   </section>
 </BaseLayout>
