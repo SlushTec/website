@@ -10,16 +10,22 @@ const nav = [
 <header class="border-b border-surface/80 bg-iron/95 backdrop-blur sticky top-0 z-50">
   <div class="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
     <a href="/" class="flex items-center gap-3 group">
-      <img src="/mark-circular.svg" alt="SlushTec" class="w-8 h-8" width="32" height="32" />
-      <span class="font-display font-semibold tracking-tight text-golden-glow group-hover:text-warm-earth transition">
-        SLUSHTEC
+      <img 
+        src="/mark-circular.svg" 
+        alt="SlushTec mark" 
+        class="w-9 h-9 sm:w-10 sm:h-10 transition group-hover:scale-105" 
+        width="40" 
+        height="40" 
+      />
+      <span class="font-display font-bold tracking-wider text-lg sm:text-xl text-golden-glow group-hover:text-warm-earth transition">
+        <span class="text-white">SLUSH</span><span class="text-golden-glow">TEC</span>
       </span>
     </a>
-    <nav class="flex gap-6 text-sm">
+    <nav class="flex gap-5 sm:gap-7 text-sm">
       {nav.map((item) => (
         <a
           href={item.href}
-          class="text-gray-300 hover:text-warm-earth transition"
+          class="text-gray-300 hover:text-warm-earth transition tracking-wide"
         >
           {item.label}
         </a>

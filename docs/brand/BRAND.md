@@ -12,18 +12,19 @@ You act. The world keeps score.
 - All-caps **SLUSHTEC**
 - Angular geometric / metallic styling matching approved master
 - Proportional emphasis on **S** and **T** (stronger visual weight and cuts)
-- Color split: Iron Black on “SLUSH” → Golden Glow on “TEC”
+- Color split: Iron Black / white on “SLUSH” → Golden Glow on “TEC”
 - Broken gold underline (permanent score residual)
-- Master texture versions are the approved high-fidelity renders; use mono vectors for laser and small sizes
+- Master texture versions are the approved high-fidelity renders; current site uses clean high-contrast treatment for reliability and laser adjacency
 
 ### Primary Mark
 - Circular geometric S
 - Dark iron field + Golden Glow ring
 - Bold angular construction for silhouette and badge energy
 - Laser-first design (high contrast, consistent weight)
+- Live at `/mark-circular.svg` and used in Header + favicon
 
 ### Lockups
-- Horizontal: mark + wordmark
+- Horizontal: mark + wordmark (current Header)
 - Stacked for vertical contexts
 
 ## Color Tokens
@@ -53,7 +54,7 @@ You act. The world keeps score.
 - Prefer filled silhouette or clean outline
 
 ## Usage Rules
-- Digital / web: full color + texture masters
+- Digital / web: full color + texture masters when available
 - Merch / laser / favicon / small: mono or pure vector circular S
 - Never stretch, rotate off-axis, or apply soft/blur effects
 - Badge energy first — marks should feel residual and earned
@@ -61,7 +62,7 @@ You act. The world keeps score.
 ## Assets Location
 - `public/mark-circular.svg` — primary geometric S
 - `public/favicon.svg` — simplified circular S
-- High-fidelity metallic wordmark masters: approved renders (add to public/logos/ when ready)
+- Header: live circular mark + color-split SLUSHTEC
 - This document: `docs/brand/BRAND.md`
 
 ---
